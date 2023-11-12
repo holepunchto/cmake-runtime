@@ -1,0 +1,25 @@
+{
+  "name": "cmake-binary",
+  "version": "0.0.0",
+  "description": "cmake binaries for windows, linux and macos",
+  "bin": {},
+  "files": [
+    "NOTICE",
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "build": "node ./build.mjs"
+  },
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/holepunchto/cmake-binary.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/cmake-binary/issues"
+  },
+  "homepage": "https://github.com/holepunchto/cmake-binary"
+}
