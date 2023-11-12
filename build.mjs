@@ -9,7 +9,7 @@ if (process.platform !== 'darwin' && process.platform !== 'linux') {
   process.exit(1)
 }
 
-const version = '3.26.5'
+const version = '3.27.7'
 const binWrap = '#!/usr/bin/env node\nrequire(\'../lib/spawn\')(__filename)\n'
 const base = 'https://github.com/Kitware/CMake/releases/download/v' + version
 const dirname = path.dirname(fileURLToPath(import.meta.url))
