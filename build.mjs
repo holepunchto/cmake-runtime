@@ -149,8 +149,8 @@ async function runProcessIn (cwd, cmd, ...args) {
 }
 
 async function fetchAll () {
-  await fetchDist('win32', 'x64', `cmake-${version}-windows-x86_64.zip`)
-  await fetchDist('win32', 'arm64', `cmake-${version}-windows-arm64.zip`)
+  await fetchDist('windows', 'x64', `cmake-${version}-windows-x86_64.zip`)
+  await fetchDist('windows', 'arm64', `cmake-${version}-windows-arm64.zip`)
   await fetchDist('darwin', null, `cmake-${version}-macos-universal.tar.gz`)
   await fetchDist('linux', 'x64', `cmake-${version}-linux-x86_64.tar.gz`)
   await fetchDist('linux', 'arm64', `cmake-${version}-linux-aarch64.tar.gz`)

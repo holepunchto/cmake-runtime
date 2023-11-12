@@ -18,8 +18,8 @@
     "build": "node ./build.mjs"
   },
   "optionalDependencies": {
-    "cmake-binary-win32-x64": "3.26.5",
-    "cmake-binary-win32-arm64": "3.26.5",
+    "cmake-binary-windows-x64": "3.26.5",
+    "cmake-binary-windows-arm64": "3.26.5",
     "cmake-binary-darwin-universal": "3.26.5",
     "cmake-binary-linux-x64": "3.26.5",
     "cmake-binary-linux-arm64": "3.26.5"
