@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime",
-  "version": "3.27.7",
+  "version": "3.27.7-1",
   "description": "cmake binaries for windows, linux and macos",
   "bin": {
     "cmake": "bin/cmake",
