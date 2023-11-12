@@ -15,7 +15,8 @@
     "bin"
   ],
   "scripts": {
-    "build": "node ./build.mjs"
+    "build": "node ./build.mjs",
+    "publish-all": "node ./publish.mjs"
   },
   "optionalDependencies": {
     "cmake-runtime-windows-x64": "3.27.7",
