@@ -165,7 +165,7 @@ async function fetchAll () {
   }
   pkg.optionalDependencies = optionalDependencies
 
-  await runProcessIn(dirname, 'chmod', '+x', 'bin/*')
+  await runProcessIn(dirname, 'chmod', '+x', ...Object.values(pkg.bin))
 
   await fs.promises.writeFile(path.join(dirname, 'package.json'), JSON.stringify(pkg, null, 2) + '\n')
 }

@@ -1,8 +1,14 @@
 {
   "name": "cmake-binary",
-  "version": "0.0.0",
+  "version": "3.26.5",
   "description": "cmake binaries for windows, linux and macos",
-  "bin": {},
+  "bin": {
+    "cmake": "bin/cmake",
+    "ccmake": "bin/ccmake",
+    "cpack": "bin/cpack",
+    "ctest": "bin/ctest",
+    "cmcldeps": "bin/cmcldeps"
+  },
   "files": [
     "NOTICE",
     "lib",
@@ -11,7 +17,13 @@
   "scripts": {
     "build": "node ./build.mjs"
   },
-  "optionalDependencies": {},
+  "optionalDependencies": {
+    "cmake-binary-win32-x64": "3.26.5",
+    "cmake-binary-win32-arm64": "3.26.5",
+    "cmake-binary-darwin-universal": "3.26.5",
+    "cmake-binary-linux-x64": "3.26.5",
+    "cmake-binary-linux-arm64": "3.26.5"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/holepunchto/cmake-binary.git"
