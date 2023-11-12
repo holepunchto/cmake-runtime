@@ -1,13 +1,13 @@
-# cmake-binary
+# cmake-runtime
 
 cmake binaries for windows, linux and macos
 
 ```
-npm install -g cmake-binary
+npm install -g cmake-runtime
 cmake --version
 ```
 
-The versions mirror the cmake versions. See `npm info cmake-binary` for available versions.
+The versions mirror the cmake versions. See `npm info cmake-runtime` for available versions.
 
 ## License
 

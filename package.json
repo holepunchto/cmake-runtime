@@ -1,5 +1,5 @@
 {
-  "name": "cmake-binary",
+  "name": "cmake-runtime",
   "version": "3.27.7",
   "description": "cmake binaries for windows, linux and macos",
   "bin": {
@@ -18,20 +18,20 @@
     "build": "node ./build.mjs"
   },
   "optionalDependencies": {
-    "cmake-binary-windows-x64": "3.27.7",
-    "cmake-binary-windows-arm64": "3.27.7",
-    "cmake-binary-darwin-universal": "3.27.7",
-    "cmake-binary-linux-x64": "3.27.7",
-    "cmake-binary-linux-arm64": "3.27.7"
+    "cmake-runtime-windows-x64": "3.27.7",
+    "cmake-runtime-windows-arm64": "3.27.7",
+    "cmake-runtime-darwin-universal": "3.27.7",
+    "cmake-runtime-linux-x64": "3.27.7",
+    "cmake-runtime-linux-arm64": "3.27.7"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holepunchto/cmake-binary.git"
+    "url": "https://github.com/holepunchto/cmake-runtime.git"
   },
   "author": "Holepunch",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/holepunchto/cmake-binary/issues"
+    "url": "https://github.com/holepunchto/cmake-runtime/issues"
   },
-  "homepage": "https://github.com/holepunchto/cmake-binary"
+  "homepage": "https://github.com/holepunchto/cmake-runtime"
 }

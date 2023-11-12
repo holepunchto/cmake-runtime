@@ -9,10 +9,11 @@ if (process.platform !== 'darwin' && process.platform !== 'linux') {
   process.exit(1)
 }
 
-const version = '3.27.7'
+const dirname = path.dirname(fileURLToPath(import.meta.url))
+const pkg = JSON.parse(await fs.promises.readFile(path.join(dirname, 'package.json'), 'utf-8'))
+const version = pkg.version
 const binWrap = '#!/usr/bin/env node\nrequire(\'../lib/spawn\')(__filename)\n'
 const base = 'https://github.com/Kitware/CMake/releases/download/v' + version
-const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 const tmp = path.join(dirname, 'tmp')
 const npm = path.join(dirname, 'npm')
@@ -88,7 +89,7 @@ async function buildDist (platform, arch, folder) {
   await fs.promises.cp(share, path.join(folder, 'share'), { recursive: true })
 
   const pkg = {
-    name: `cmake-binary-${platform}-${arch}`,
+    name: `cmake-runtime-${platform}-${arch}`,
     version,
     description: `cmake ${platform}-${arch} binary`,
     bin: {},
@@ -98,14 +99,14 @@ async function buildDist (platform, arch, folder) {
     ],
     repository: {
       type: 'git',
-      url: 'git+https://github.com/holepunchto/cmake-binary.git'
+      url: 'git+https://github.com/holepunchto/cmake-runtime.git'
     },
     author: 'Holepunch',
     license: 'BSD-3-clause', // cmake license
     bugs: {
-      url: 'https://github.com/holepunchto/cmake-binary/issues'
+      url: 'https://github.com/holepunchto/cmake-runtime/issues'
     },
-    homepage: 'https://github.com/holepunchto/cmake-binary',
+    homepage: 'https://github.com/holepunchto/cmake-runtime',
     os: [
       platform
     ]
@@ -155,9 +156,6 @@ async function fetchAll () {
   await fetchDist('linux', 'x64', `cmake-${version}-linux-x86_64.tar.gz`)
   await fetchDist('linux', 'arm64', `cmake-${version}-linux-aarch64.tar.gz`)
 
-  const pkg = JSON.parse(await fs.promises.readFile(path.join(dirname, 'package.json'), 'utf-8'))
-
-  pkg.version = version
   pkg.bin = {}
   for (const id of bins) {
     pkg.bin[id] = 'bin/' + id
