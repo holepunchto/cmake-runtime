@@ -12,7 +12,7 @@ module.exports = function runtime (referrer, opts) {
 
   const {
     platform = process.platform,
-    arch = process.arch
+    arch = platform === 'darwin' ? 'universal' : process.arch
   } = opts
 
   const filename = path.basename(referrer)
