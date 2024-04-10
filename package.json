@@ -1,38 +1,42 @@
 {
   "name": "cmake-runtime",
-  "version": "3.27.7-1",
-  "description": "cmake binaries for windows, linux and macos",
+  "version": "3.27.1",
+  "description": "Prebuilt CMake binaries for macOS, Linux, and Windows",
+  "main": "index.js",
   "bin": {
-    "cmake": "bin/cmake",
     "ccmake": "bin/ccmake",
+    "cmake": "bin/cmake",
+    "cmcldeps": "bin/cmcldeps",
     "cpack": "bin/cpack",
-    "ctest": "bin/ctest",
-    "cmcldeps": "bin/cmcldeps"
+    "ctest": "bin/ctest"
   },
   "files": [
     "NOTICE",
-    "lib",
-    "bin"
+    "index.js",
+    "bin",
+    "lib"
   ],
   "scripts": {
-    "build": "node ./build.mjs",
-    "publish-all": "node ./publish.mjs"
-  },
-  "optionalDependencies": {
-    "cmake-runtime-windows-x64": "3.27.7",
-    "cmake-runtime-windows-arm64": "3.27.7",
-    "cmake-runtime-darwin-universal": "3.27.7",
-    "cmake-runtime-linux-x64": "3.27.7",
-    "cmake-runtime-linux-arm64": "3.27.7"
+    "test": "standard"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holepunchto/cmake-runtime.git"
+    "url": "git+https://github.com/holepunchto/cmake-runtime.git"
   },
   "author": "Holepunch",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/holepunchto/cmake-runtime/issues"
   },
-  "homepage": "https://github.com/holepunchto/cmake-runtime"
+  "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
+  "optionalDependencies": {
+    "cmake-runtime-darwin-universal": "3.29.1",
+    "cmake-runtime-linux-arm64": "3.29.1",
+    "cmake-runtime-linux-x64": "3.29.1",
+    "cmake-runtime-win32-arm64": "3.29.1",
+    "cmake-runtime-win32-x64": "3.29.1"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
 }

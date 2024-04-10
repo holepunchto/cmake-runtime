@@ -1,0 +1,32 @@
+{
+  "name": "cmake-runtime-linux-x64",
+  "version": "3.29.1",
+  "description": "The Linux Intel 64-bit binaries for CMake",
+  "bin": {
+    "ccmake": "bin/ccmake",
+    "cmake": "bin/cmake",
+    "cpack": "bin/cpack",
+    "ctest": "bin/ctest"
+  },
+  "files": [
+    "NOTICE",
+    "bin",
+    "share"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/cmake-runtime.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/cmake-runtime/issues"
+  },
+  "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "x64"
+  ]
+}

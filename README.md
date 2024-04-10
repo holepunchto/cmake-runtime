@@ -1,14 +1,13 @@
 # cmake-runtime
 
-cmake binaries for windows, linux and macos
+Prebuilt CMake binaries for macOS, Linux, and Windows.
 
 ```
-npm install -g cmake-runtime
-cmake --version
+npm i -g cmake-runtime
 ```
 
-The versions mirror the cmake versions. See `npm info cmake-runtime` for available versions.
+The versions mirror the CMake versions. See `npm info cmake-runtime` for available versions.
 
 ## License
 
-[cmake](https://cmake.org) is licensed under BSD-3-Clause and this repo is licensed under Apache-2.0
+Apache-2.0 and BSD-3-Clause.

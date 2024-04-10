@@ -1,0 +1,32 @@
+{
+  "name": "cmake-runtime-win32-arm64",
+  "version": "3.29.1",
+  "description": "The Windows ARM 64-bit binaries for CMake",
+  "bin": {
+    "cmake": "bin/cmake.exe",
+    "cmcldeps": "bin/cmcldeps.exe",
+    "cpack": "bin/cpack.exe",
+    "ctest": "bin/ctest.exe"
+  },
+  "files": [
+    "NOTICE",
+    "bin",
+    "share"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holepunchto/cmake-runtime.git"
+  },
+  "author": "Holepunch",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/holepunchto/cmake-runtime/issues"
+  },
+  "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "arm64"
+  ]
+}
