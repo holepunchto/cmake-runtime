@@ -16,6 +16,12 @@
     "bin",
     "lib"
   ],
+  "imports": {
+    "path": {
+      "bare": "bare-path",
+      "default": "path"
+    }
+  },
   "scripts": {
     "test": "standard"
   },
@@ -29,6 +35,9 @@
     "url": "https://github.com/holepunchto/cmake-runtime/issues"
   },
   "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
+  "dependencies": {
+    "bare-path": "^2.1.1"
+  },
   "optionalDependencies": {
     "cmake-runtime-darwin-universal": "3.29.1",
     "cmake-runtime-linux-arm64": "3.29.1",
