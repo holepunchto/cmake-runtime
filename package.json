@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime",
-  "version": "3.29.1",
+  "version": "3.29.2",
   "description": "Prebuilt CMake binaries for macOS, Linux, and Windows",
   "main": "index.js",
   "bin": {
@@ -39,11 +39,11 @@
     "bare-path": "^2.1.1"
   },
   "optionalDependencies": {
-    "cmake-runtime-darwin-universal": "3.29.1",
-    "cmake-runtime-linux-arm64": "3.29.1",
-    "cmake-runtime-linux-x64": "3.29.1",
-    "cmake-runtime-win32-arm64": "3.29.1",
-    "cmake-runtime-win32-x64": "3.29.1"
+    "cmake-runtime-darwin-universal": "3.29.2",
+    "cmake-runtime-linux-arm64": "3.29.2",
+    "cmake-runtime-linux-x64": "3.29.2",
+    "cmake-runtime-win32-arm64": "3.29.2",
+    "cmake-runtime-win32-x64": "3.29.2"
   },
   "devDependencies": {
     "standard": "^17.0.0"
