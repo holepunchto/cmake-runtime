@@ -17,6 +17,10 @@
     "lib"
   ],
   "imports": {
+    "os": {
+      "bare": "bare-os",
+      "default": "os"
+    },
     "path": {
       "bare": "bare-path",
       "default": "path"
@@ -36,6 +40,7 @@
   },
   "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
   "dependencies": {
+    "bare-os": "^2.2.1",
     "bare-path": "^2.1.1"
   },
   "optionalDependencies": {

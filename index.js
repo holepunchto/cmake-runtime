@@ -1,3 +1,4 @@
+const os = require('os')
 const path = require('path')
 
 module.exports = function runtime (referrer, opts) {
@@ -11,8 +12,8 @@ module.exports = function runtime (referrer, opts) {
   if (!opts) opts = {}
 
   const {
-    platform = process.platform,
-    arch = platform === 'darwin' ? 'universal' : process.arch
+    platform = os.platform(),
+    arch = platform === 'darwin' ? 'universal' : os.arch()
   } = opts
 
   const filename = path.basename(referrer)
