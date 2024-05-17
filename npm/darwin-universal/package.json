@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-darwin-universal",
-  "version": "3.29.2",
+  "version": "3.29.3",
   "description": "The macOS 64-bit binaries for CMake",
   "bin": {
     "ccmake": "bin/ccmake",

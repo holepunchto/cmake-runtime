@@ -44,11 +44,11 @@
     "bare-path": "^2.1.1"
   },
   "optionalDependencies": {
-    "cmake-runtime-darwin-universal": "3.29.2",
-    "cmake-runtime-linux-arm64": "3.29.2",
-    "cmake-runtime-linux-x64": "3.29.2",
-    "cmake-runtime-win32-arm64": "3.29.2",
-    "cmake-runtime-win32-x64": "3.29.2"
+    "cmake-runtime-darwin-universal": "3.29.3",
+    "cmake-runtime-linux-arm64": "3.29.3",
+    "cmake-runtime-linux-x64": "3.29.3",
+    "cmake-runtime-win32-arm64": "3.29.3",
+    "cmake-runtime-win32-x64": "3.29.3"
   },
   "devDependencies": {
     "standard": "^17.0.0"

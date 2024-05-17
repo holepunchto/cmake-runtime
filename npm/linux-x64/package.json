@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-linux-x64",
-  "version": "3.29.2",
+  "version": "3.29.3",
   "description": "The Linux Intel 64-bit binaries for CMake",
   "bin": {
     "ccmake": "bin/ccmake",

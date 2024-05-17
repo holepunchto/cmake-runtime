@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-linux-arm64",
-  "version": "3.29.2",
+  "version": "3.29.3",
   "description": "The Linux ARM 64-bit binaries for CMake",
   "bin": {
     "ccmake": "bin/ccmake",

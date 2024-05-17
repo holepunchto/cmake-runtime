@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-win32-x64",
-  "version": "3.29.2",
+  "version": "3.29.3",
   "description": "The Windows Intel 64-bit binaries for CMake",
   "bin": {
     "cmake": "bin/cmake.exe",
