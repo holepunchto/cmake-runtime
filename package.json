@@ -40,8 +40,8 @@
   },
   "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
   "dependencies": {
-    "bare-os": "^2.2.1",
-    "bare-path": "^2.1.1"
+    "bare-os": "^3.0.1",
+    "bare-path": "^3.0.0"
   },
   "optionalDependencies": {
     "cmake-runtime-darwin-universal": "3.29.3",
