@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-win32-arm64",
-  "version": "3.30.6-0",
+  "version": "3.30.6-1",
   "description": "The Windows ARM 64-bit binaries for CMake",
   "exports": {
     ".": "./index.js",
