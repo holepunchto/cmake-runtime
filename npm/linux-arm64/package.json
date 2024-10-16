@@ -13,6 +13,7 @@
   },
   "files": [
     "NOTICE",
+    "index.js",
     "bin",
     "share"
   ],
