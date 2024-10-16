@@ -4,7 +4,8 @@
   "description": "Prebuilt CMake binaries for macOS, Linux, and Windows",
   "exports": {
     ".": "./index.js",
-    "./package": "./package.json"
+    "./package": "./package.json",
+    "./spawn": "./lib/spawn.js"
   },
   "bin": {
     "ccmake": "bin/ccmake",
