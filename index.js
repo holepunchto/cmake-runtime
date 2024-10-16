@@ -18,18 +18,20 @@ module.exports = function runtime (referrer, opts) {
 
   const filename = path.basename(referrer)
 
-  const base = `cmake-runtime-${platform}-${arch}`
-
   let mod
   try {
-    mod = require.resolve(`${base}/package.json`)
+    mod = require(`cmake-runtime-${platform}-${arch}`)
   } catch (err) {
     if (err.code === 'MODULE_NOT_FOUND') {
-      throw new Error(`No binary found for target '${platform}-${arch}'`)
+      throw new Error(`No binaries found for target '${platform}-${arch}'`)
     } else {
       throw err
     }
   }
 
-  return path.join(mod, '..', require(mod).bin[filename])
+  if (filename in mod === false) {
+    throw new Error(`No binary found for target '${platform}-${arch}' for referrer '${referrer}'`)
+  }
+
+  return mod[filename]
 }

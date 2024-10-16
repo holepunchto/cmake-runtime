@@ -2,6 +2,9 @@
   "name": "cmake-runtime-win32-x64",
   "version": "3.29.3",
   "description": "The Windows Intel 64-bit binaries for CMake",
+  "exports": {
+    "./package": "./package.json"
+  },
   "bin": {
     "cmake": "bin/cmake.exe",
     "cmcldeps": "bin/cmcldeps.exe",
@@ -10,6 +13,10 @@
   },
   "files": [
     "NOTICE",
+    "bin",
+    "share"
+  ],
+  "assets": [
     "bin",
     "share"
   ],
@@ -28,5 +35,8 @@
   ],
   "cpu": [
     "x64"
-  ]
+  ],
+  "dependencies": {
+    "require-asset": "^1.0.2"
+  }
 }

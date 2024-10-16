@@ -2,7 +2,10 @@
   "name": "cmake-runtime",
   "version": "3.29.3",
   "description": "Prebuilt CMake binaries for macOS, Linux, and Windows",
-  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package": "./package.json"
+  },
   "bin": {
     "ccmake": "bin/ccmake",
     "cmake": "bin/cmake",
@@ -16,7 +19,14 @@
     "bin",
     "lib"
   ],
+  "workspaces": [
+    "npm/*"
+  ],
   "imports": {
+    "child_process": {
+      "bare": "bare-subprocess",
+      "default": "child_process"
+    },
     "os": {
       "bare": "bare-os",
       "default": "os"
@@ -41,7 +51,8 @@
   "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
   "dependencies": {
     "bare-os": "^3.0.1",
-    "bare-path": "^3.0.0"
+    "bare-path": "^3.0.0",
+    "bare-subprocess": "^4.0.2"
   },
   "optionalDependencies": {
     "cmake-runtime-darwin-universal": "3.29.3",

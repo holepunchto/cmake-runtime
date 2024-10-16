@@ -2,6 +2,9 @@
   "name": "cmake-runtime-linux-arm64",
   "version": "3.29.3",
   "description": "The Linux ARM 64-bit binaries for CMake",
+  "exports": {
+    "./package": "./package.json"
+  },
   "bin": {
     "ccmake": "bin/ccmake",
     "cmake": "bin/cmake",
@@ -10,6 +13,10 @@
   },
   "files": [
     "NOTICE",
+    "bin",
+    "share"
+  ],
+  "assets": [
     "bin",
     "share"
   ],
@@ -28,5 +35,8 @@
   ],
   "cpu": [
     "arm64"
-  ]
+  ],
+  "dependencies": {
+    "require-asset": "^1.0.2"
+  }
 }
