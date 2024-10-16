@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime",
-  "version": "3.30.6-0",
+  "version": "3.30.6-1",
   "description": "Prebuilt CMake binaries for macOS, Linux, and Windows",
   "exports": {
     ".": "./index.js",
