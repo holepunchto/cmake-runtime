@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-darwin-universal",
-  "version": "3.30.6-1",
+  "version": "3.31.0",
   "description": "The macOS 64-bit binaries for CMake",
   "exports": {
     ".": "./index.js",
