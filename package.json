@@ -53,7 +53,7 @@
   "dependencies": {
     "bare-os": "^3.0.1",
     "bare-path": "^3.0.0",
-    "bare-subprocess": "^4.0.2"
+    "bare-subprocess": "^5.0.0"
   },
   "optionalDependencies": {
     "cmake-runtime-darwin-universal": "3.31.0",
