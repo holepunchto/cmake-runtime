@@ -1,7 +1,7 @@
 const os = require('os')
 const path = require('path')
 
-module.exports = function runtime (referrer, opts) {
+module.exports = function runtime(referrer, opts) {
   if (typeof referrer === 'object' && referrer !== null) {
     opts = referrer
     referrer = 'cmake'
@@ -30,7 +30,9 @@ module.exports = function runtime (referrer, opts) {
   }
 
   if (filename in mod === false) {
-    throw new Error(`No binary found for target '${platform}-${arch}' for referrer '${referrer}'`)
+    throw new Error(
+      `No binary found for target '${platform}-${arch}' for referrer '${referrer}'`
+    )
   }
 
   return mod[filename]

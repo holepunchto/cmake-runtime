@@ -28,6 +28,10 @@
       "bare": "bare-subprocess",
       "default": "child_process"
     },
+    "fs": {
+      "bare": "bare-fs",
+      "default": "fs"
+    },
     "os": {
       "bare": "bare-os",
       "default": "os"
@@ -38,7 +42,7 @@
     }
   },
   "scripts": {
-    "test": "standard"
+    "test": "prettier . --check"
   },
   "repository": {
     "type": "git",
@@ -51,6 +55,7 @@
   },
   "homepage": "https://github.com/holepunchto/cmake-runtime#readme",
   "dependencies": {
+    "bare-fs": "^4.4.4",
     "bare-os": "^3.0.1",
     "bare-path": "^3.0.0",
     "bare-subprocess": "^5.0.0"
@@ -63,6 +68,7 @@
     "cmake-runtime-win32-x64": "4.0.2"
   },
   "devDependencies": {
-    "standard": "^17.0.0"
+    "prettier": "^3.6.2",
+    "prettier-config-holepunch": "^1.0.0"
   }
 }
