@@ -61,11 +61,11 @@
     "bare-subprocess": "^5.0.0"
   },
   "optionalDependencies": {
-    "cmake-runtime-darwin-universal": "4.0.2",
-    "cmake-runtime-linux-arm64": "4.0.2",
-    "cmake-runtime-linux-x64": "4.0.2",
-    "cmake-runtime-win32-arm64": "4.0.2",
-    "cmake-runtime-win32-x64": "4.0.2"
+    "cmake-runtime-darwin-universal": "4.1.1",
+    "cmake-runtime-linux-arm64": "4.1.1",
+    "cmake-runtime-linux-x64": "4.1.1",
+    "cmake-runtime-win32-arm64": "4.1.1",
+    "cmake-runtime-win32-x64": "4.1.1"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
