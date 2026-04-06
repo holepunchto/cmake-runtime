@@ -1,7 +1,7 @@
 {
-  "name": "cmake-runtime-darwin-universal",
+  "name": "cmake-runtime-darwin-x64",
   "version": "4.1.1",
-  "description": "The macOS 64-bit binaries for CMake",
+  "description": "The macOS Intel 64-bit binaries for CMake",
   "exports": {
     ".": "./index.js",
     "./package": "./package.json"
@@ -16,6 +16,7 @@
     "NOTICE",
     "index.js",
     "bin",
+    "doc",
     "share"
   ],
   "assets": [
@@ -36,7 +37,6 @@
     "darwin"
   ],
   "cpu": [
-    "arm64",
     "x64"
   ],
   "dependencies": {

@@ -16,6 +16,7 @@
     "NOTICE",
     "index.js",
     "bin",
+    "doc",
     "share"
   ],
   "assets": [
