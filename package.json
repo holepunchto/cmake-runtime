@@ -62,12 +62,12 @@
     "bare-subprocess": "^5.0.0"
   },
   "optionalDependencies": {
-    "cmake-runtime-darwin-arm64": "4.1.1",
-    "cmake-runtime-darwin-x64": "4.1.1",
-    "cmake-runtime-linux-arm64": "4.1.1",
-    "cmake-runtime-linux-x64": "4.1.1",
-    "cmake-runtime-win32-arm64": "4.1.1",
-    "cmake-runtime-win32-x64": "4.1.1"
+    "cmake-runtime-darwin-arm64": "4.3.0",
+    "cmake-runtime-darwin-x64": "4.3.0",
+    "cmake-runtime-linux-arm64": "4.3.0",
+    "cmake-runtime-linux-x64": "4.3.0",
+    "cmake-runtime-win32-arm64": "4.3.0",
+    "cmake-runtime-win32-x64": "4.3.0"
   },
   "devDependencies": {
     "cmake-bare": "^1.7.7",

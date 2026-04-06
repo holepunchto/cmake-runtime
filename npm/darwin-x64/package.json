@@ -1,6 +1,6 @@
 {
   "name": "cmake-runtime-darwin-x64",
-  "version": "4.1.1",
+  "version": "4.3.0",
   "description": "The macOS Intel 64-bit binaries for CMake",
   "exports": {
     ".": "./index.js",
