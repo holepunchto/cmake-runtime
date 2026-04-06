@@ -7,10 +7,12 @@ project(cmake_runtime C)
 
 fetch_package("github:Kitware/CMake@4.1.1")
 
-set(components cmake ctest cpack ccmake)
+set(components cmake ctest cpack)
 
 if(WIN32)
   list(APPEND components cmcldeps)
+else()
+  list(APPEND components ccmake)
 endif()
 
 add_custom_target(cmake_runtime ALL DEPENDS ${components})
