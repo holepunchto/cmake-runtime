@@ -35,6 +35,8 @@ jobs:
       - uses: holepunchto/actions/bare-base@v1
         with:
           force-install: true
+      - run: choco upgrade llvm
+        if: ${{ matrix.platform == 'win32' }}
       - uses: holepunchto/actions/compile-prebuilds@v1
         with:
           platform: ${{ matrix.platform }}
