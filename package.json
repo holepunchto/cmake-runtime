@@ -59,7 +59,7 @@
     "bare-fs": "^4.4.4",
     "bare-os": "^3.0.1",
     "bare-path": "^3.0.0",
-    "bare-subprocess": "^5.0.0"
+    "bare-subprocess": "^6.1.0"
   },
   "optionalDependencies": {
     "cmake-runtime-darwin-arm64": "4.3.1",
